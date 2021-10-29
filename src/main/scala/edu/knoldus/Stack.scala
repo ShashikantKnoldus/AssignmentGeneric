@@ -22,8 +22,3 @@ class NonEmptyStack[A](elem: A, remain: Stack[A]) extends Stack[A] {
   def top = elem
   def pop = remain
 }
-object cnclk extends App{
-  val x = new EmptyStack[Int]
-  val y = x.push(1).push(2)
-  println(y.isEmpty)
-}
