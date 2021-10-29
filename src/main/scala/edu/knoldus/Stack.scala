@@ -17,8 +17,8 @@ class EmptyStack[A] extends Stack[A] {
 
 }
 
-class NonEmptyStack[A](elem: A, remain: Stack[A]) extends Stack[A] {
+class NonEmptyStack[A](element: A, remainStack: Stack[A]) extends Stack[A] {
   def isEmpty = false
-  def top = elem
-  def pop = remain
+  def top = element
+  def pop = remainStack
 }
